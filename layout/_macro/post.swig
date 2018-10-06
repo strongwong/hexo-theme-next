@@ -226,8 +226,10 @@
             <span class="post-meta-item-icon"
             {% if not theme.post_meta.item_text %} title="{{ __('post.views') }}" {% endif %}>
             <i class="fa fa-{{ theme.busuanzi_count.post_views_icon }}"></i>
+            {{ theme.busuanzi_count.post_views_header }}
             {% if theme.post_meta.item_text %} {{__('post.views') + __('symbol.colon') }} {% endif %}
             <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            {{ theme.busuanzi_count.post_views_footer }}
             </span>
           {% endif %}
 
